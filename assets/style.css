@@ -40,7 +40,7 @@ footer{
 
     .cartao__conteudo{
 text-align: center;
-background-color: aquamarine;
+background-color: var(--card-front-color);
 height: 100%;
 
     }
