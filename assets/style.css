@@ -35,14 +35,14 @@ footer p {
     height: 20rem;
     flex-grow: 1;
     flex-basis: calc(33%-6rem);
-
 }
 
 .cartao__conteudo {
     text-align: center;
     background-color: var(--card-front-color);
     height: 100%;
-
+    transform-style: preserve-3d;
+    transition: transform 300ms;
 }
 
 .cartao__conteudo h3 {
@@ -56,12 +56,15 @@ footer p {
     font-size: 1vw;
 }
 
-.cartao__conteudo__pergunta p{
+.cartao__conteudo__pergunta p {
     color: var(--text-color);
     font-weight: 500;
 }
 
-.cartao__conteudo__resposta p{
+.cartao__conteudo__resposta p {
     color: var(--card-back-color);
     font-weight: 700;
+}
+.cartao:hover .cartao__conteudo {
+    transform: rotateY(180deg);
 }
